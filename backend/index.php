@@ -21,24 +21,17 @@ if (isset($_SESSION['id'])) {
     }
 
     require_once $patch_root . "/backend/views/bases/header_view.php";
-    
+
     if ($url == "") {
         require $patch_root . "backend/controllers/dashboard.php";
-        
-        if (file_exists("controllers/title_controller.php")) {
-            include_once("controllers/title_controller.php");
+
+        if (file_exists("controllers/title.php")) {
+            include_once("controllers/title.php");
         }
     } else if (isset($url[0]) && isset($url[1]) && $url[0] == "backend" && file_exists($patch_root . $url[0] . "/"  . "controllers/" . $url[1] . ".php")) {
         require $patch_root . $url[0] . "/"  . "controllers/" . $url[1] . ".php";
-        
-        if (file_exists("controllers/title_controller.php")) {
-            include_once("controllers/title_controller.php");
-        }
     } else {
         require $patch_root . "404.php";
-        if (file_exists("controllers/title_controller.php")) {
-            include_once("controllers/title_controller.php");
-        }
     }
 } else {
     require_once "controllers/auth.php";

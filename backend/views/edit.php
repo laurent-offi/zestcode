@@ -25,7 +25,7 @@
         <form method="post">
             
             <div class="delete">
-                <span data-tooltip="Cliquer ici pour supprimer l'article" data-flow="top">
+                <span data-tooltip="Cliquez ici pour supprimer l'article" data-flow="top">
                     <a href="/backend/delete/<?= $article['id'] ?>"><i name="delete" class="fas fa-trash-alt"></i></a>
                 </span>
             </div>

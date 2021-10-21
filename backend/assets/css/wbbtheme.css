@@ -58,7 +58,7 @@ html{height:100% !important;}
   background-color: #e7e7e7;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  max-height: 25rem;
+  max-height: 50vh;
 }
 .wysibb .wysibb-toolbar .modeSwitch{
   display:block;
