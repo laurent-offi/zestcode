@@ -1,0 +1,106 @@
+form {
+    display: flex;
+    flex-direction: column!important;
+    width: 100%;
+    justify-content: center;
+}
+
+.form {
+    width: 60%;
+    background-color: white!important;
+    padding: 1.2rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    border-radius: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    user-select: none;
+}
+
+.form input {
+    padding: 1.2rem;
+    border-radius: 1rem;
+    outline: none;
+    margin-bottom: 1rem;
+    background-color: #e7e7e7;
+    border: none;
+    color: #464545;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 20%);
+}
+
+.form textarea {
+    resize: none;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    outline: none;
+    margin-bottom: 1rem;
+    background-color: #e7e7e7;
+    border: none;
+    height: 10rem;
+    color: #464545;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 20%);
+}
+
+.form button {
+    margin: auto;
+    min-width: 30%;
+    width: 30%;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #457fca; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #457fca, #5691c8); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #457fca, #5691c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: #457fca; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3d70b3, #4675a1); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3d70b3, #4675a1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.form li {
+    background-color: #7a0808;
+    list-style: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    color: #fff1f1;
+}
+
+.success {
+    background-color: rgb(33, 158, 33);
+    border-radius: 1rem;
+    color: rgb(236, 255, 236);
+    font-weight: bold;
+    padding: 1.2rem;
+    margin: 1.2rem;
+}
+
+.form .delete {
+    text-align: right;
+    margin-bottom: 1rem;
+
+}
+
+.form .delete a {
+    text-align: right;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #e44f4f;
+    background-color: unset;
+
+}
+
+.form .delete a:hover {
+    color: #b63838;
+}
+
+.form .informations {
+    text-align: center;
+    margin: 1rem;
+    color: #cc2828;
+}
