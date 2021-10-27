@@ -4,6 +4,7 @@
     width: 20%;
     user-select: none;
     height: 100vh;
+    transition: 0.5s;
 }
 
 .sidebar ul {

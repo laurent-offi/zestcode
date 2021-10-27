@@ -14,8 +14,8 @@ if (isset($_SESSION['id'])) {
 
         if (isset($_POST['publish'])) {
 
-            $article_title = strip_tags(trim($_POST['title']));
-            $article_message = strip_tags(trim(nl2br($_POST['content'])));
+            $article_title = utf8_decode(strip_tags(trim($_POST['title'])));
+            $article_message = utf8_decode(strip_tags(trim(nl2br($_POST['content']))));
 
             if (!empty($article_title) && !empty($article_message)) {
 
@@ -36,8 +36,11 @@ if (isset($_SESSION['id'])) {
                 }
 
                 if ($valid) {
-                    require($patch_root . "backend/models/add-article.php");
-                    $_SESSION['information']['new_article'] = "Votre article a été publié avec succès.";
+
+                    $message_date = date("Y-m-d H:i:s");
+                    $post_hash = uniqid(rand(1000, 9999999));
+                    require($patch_root . "backend/models/add-post.php");
+                    $_SESSION['information']['article_status'] = "Votre article a été publié avec succès.";
                     header('Location: /backend/blog');
                     exit();
                 }

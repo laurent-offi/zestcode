@@ -29,15 +29,14 @@ form {
 
 .form textarea {
     resize: none;
-    padding: 0.8rem;
-    border-radius: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
     outline: none;
     margin-bottom: 1rem;
     background-color: #e7e7e7;
     border: none;
     height: 10rem;
     color: #464545;
-    box-shadow: 0 3px 5px rgb(0 0 0 / 20%);
 }
 
 .form button {

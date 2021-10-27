@@ -12,6 +12,7 @@ $url = "";
 $patch_root = $_SERVER['DOCUMENT_ROOT'] . "/";
 
 require_once($patch_root . "apps/db.php");
+require_once($patch_root . "controllers/functions/timeago_function.php");
 
 
 if (isset($_GET["url"])) {

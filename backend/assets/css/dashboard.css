@@ -24,3 +24,8 @@ a.add-post {
 a.add-post:hover {
     background-color: #346592;
 }
+
+a.back {
+    text-decoration: none;
+    color: #5757d3;
+}

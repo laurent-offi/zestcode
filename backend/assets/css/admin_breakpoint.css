@@ -1,0 +1,54 @@
+@media screen and (max-width: 850px) {
+    .sidebar {
+        /* display: none; */
+        width: 0;
+    }
+
+    .row {
+        width: 100%;
+    }
+    
+    .container {
+        width: 100%;
+        padding: unset;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    .form button {
+        width: 50%;
+    }
+
+    table {
+        margin: 1rem;
+    }
+
+    a.add-post {
+        width: 30%;
+        margin: 1rem;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .header .responsive-sidebar:after {
+        font-family: "Font Awesome 5 Pro";
+        content: "\f0c9";
+        font-size: 1.4rem;
+    }
+
+    .header .responsive-close {
+        display: none;
+    }
+
+    .header .responsive-close:after {
+        font-family: "Font Awesome 5 Pro";
+        content: "\f00d";
+        font-size: 1.4rem;
+    }
+
+
+}

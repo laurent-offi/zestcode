@@ -2,7 +2,7 @@
 
     Bienvenue dans l'administration de ZestCode.
     <br>
-    Interface dévelopée par Laurent (Moi tout seul).
+    Cette section est actuellement vide. Rendez-vous dans la gestion du blog pour Ajouter, Modifier, ou encore supprimer des articles.
 </div>
 
 </div>

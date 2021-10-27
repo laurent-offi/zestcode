@@ -3,7 +3,6 @@
 $page = "Suppression de l'article";
 
 if (isset($url[2])) {
-    if (preg_match("/([0-9])/mi", $url[2])) {
 
         require_once($patch_root . "/backend/models/search-article.php");
 
@@ -19,6 +18,7 @@ if (isset($url[2])) {
 
                         if ($valid) {
                             require_once($patch_root . "/backend/models/delete-article.php");
+                            $_SESSION['information']['article_status'] = "Votre article a été supprimé avec succès.";
                             header("Location: /backend/blog");
                             exit();
                         }
@@ -29,5 +29,4 @@ if (isset($url[2])) {
         } else {
             include($patch_root . "404.php");
         }
-    }
 }

@@ -5,13 +5,15 @@
 <link rel="stylesheet" href="<?= $assets_url . "css/form.css"; ?>">
 <link rel="stylesheet" href="<?= $assets_url . "css/tooltip.css"; ?>">
 <link rel="stylesheet" href="<?= $assets_url . "css/wbbtheme.css"; ?>">
+<link rel="stylesheet" href="<?= $assets_url . "css/pagination.css"; ?>">
+<link rel="stylesheet" href="<?= $assets_url . "css/admin_breakpoint.css"; ?>">
 <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-<div class="sidebar">
+<div class="sidebar" id="sidebar">
 
     <ul>
 
@@ -26,6 +28,9 @@
 
 <div class="row">
 <div class="header">
+
+    <div onclick="openSidebar()" class="responsive-sidebar"></div>
+    <div onclick="closeSidebar()" class="responsive-close"></div>
 
     <div class="link">
 

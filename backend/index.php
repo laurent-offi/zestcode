@@ -20,7 +20,7 @@ if (isset($_SESSION['id'])) {
         $url = explode("/", $_GET["url"]);
     }
 
-    require_once $patch_root . "/backend/views/bases/header_view.php";
+    require_once $patch_root . "backend/views/bases/header_view.php";
 
     if ($url == "") {
         require $patch_root . "backend/controllers/dashboard.php";
@@ -37,4 +37,4 @@ if (isset($_SESSION['id'])) {
     require_once "controllers/auth.php";
 }
 
-require_once $patch_root . "/backend/views/bases/footer_view.php";
+require_once $patch_root . "backend/views/bases/footer_view.php";

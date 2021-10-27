@@ -42,6 +42,9 @@ if (isset($url[2])) {
 
                             if ($valid) {
                                 require_once($patch_root . "/backend/models/edit-article.php");
+                                $_SESSION['information']['edit_article'] = "Votre article a été mis à jour avec succès.";
+                                header('Location: /backend/edit/' . $article['hash']);
+                                    exit();
                             }
                         } else {
                             $valid = false;

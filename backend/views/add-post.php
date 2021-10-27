@@ -2,7 +2,7 @@
 
     <div class="form">
 
-        <a href="/backend/blog"><i class="fas fa-arrow-circle-left"></i> Retour</a>
+        <a class="back" href="/backend/blog"><i class="fas fa-arrow-circle-left"></i> Retour</a>
         <form method="post">
 
 
@@ -27,7 +27,7 @@
             } ?>
 
 
-            <button name="publish" type="submit">Publier l'article</button>
+            <button name="publish" type="submit"><i class="fas fa-plus-circle"></i> Publier l'article</button>
 
 
         </form>

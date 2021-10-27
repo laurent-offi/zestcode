@@ -22,7 +22,7 @@
 
         <form method="post">
 
-            <a href="/backend/edit/<?= $article['id']; ?>"><i class="fas fa-arrow-circle-left"></i> Retour</a>
+            <a class="back" href="/backend/edit/<?= $article['hash']; ?>"><i class="fas fa-arrow-circle-left"></i> Retour</a>
             <div class="informations">Souhaitez-vous vraiment supprimer cet article ?</div>
 
             <button name="delete" type="submit"><i class="fas fa-trash-alt"></i> Confirmer la suppression</button>
