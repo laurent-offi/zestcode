@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : jeu. 21 oct. 2021 à 09:11
+-- Généré le : mer. 27 oct. 2021 à 11:57
 -- Version du serveur : 5.7.33
 -- Version de PHP : 8.0.8
 
@@ -50,15 +50,9 @@ CREATE TABLE `posts` (
   `post_id` int(11) NOT NULL,
   `post_title` text NOT NULL,
   `post_description` text NOT NULL,
-  `post_creation` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `post_creation` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `post_hash` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Déchargement des données de la table `posts`
---
-
-INSERT INTO `posts` (`post_id`, `post_title`, `post_description`, `post_creation`) VALUES
-(1, 'Article de l\'ordre', '[u][s][i][b][color=#1155cc][size=200][left][/left][/size][/color][/b][/i][/s][/u][i][b][size=200][color=#ff0000]Ici la voix[/color][/size][/b][/i]', '2021-10-21 08:13:44');
 
 --
 -- Index pour les tables déchargées
@@ -90,7 +84,7 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT pour la table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `post_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `post_id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

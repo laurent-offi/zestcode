@@ -19,33 +19,50 @@ if ($number_posts < 1) { ?>
 
     ?>
         <div class="blog">
-        
+
             <div class="blog-container">
-        
-        
+
+
                 <div class="post">
-        
+
                     <div class="post-image"><img src="public/images/blog-image.jpg" alt="Image du blog"></div>
-        
+
                     <div class="post-container">
-        
+
                         <div class="post-header">
-        
+
                             <div class="post-title"><?= $post['title']; ?></div>
                             <div class="post-date"><?php echo "Il y a <b>" . TimeAgo($post['creation'], date("Y-m-d H:i:s")) . "</b>" ?></div>
-        
+
                         </div>
-        
+
                         <div class="post-description"><?php $parser->parse($post['content']);
-                echo $parser->getAsHtml(); ?></div>
-        
+                                                        echo $parser->getAsHtml(); ?></div>
+
                     </div>
                 </div>
-        
-        
+
+
             </div>
-        
-        
+
+
         </div>
+
 <?php }
 } ?>
+
+
+<?php if ($totalpages > 1) { ?>
+    <div class="pagination-center">
+        <div class="pagination">
+            <?php for ($i = 1; $i <= $totalpages; $i++) {
+                if ($i == $currentpage) { ?>
+                    <a class="active" href="#"><?= $i ?></a>
+                <?php } else { ?>
+                    <a href="blog?page=<?= $i; ?>"><?= $i ?></a>
+            <?php }
+            } ?>
+
+        </div>
+    </div>
+<?php } ?>

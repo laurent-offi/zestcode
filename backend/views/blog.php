@@ -62,6 +62,7 @@ unset($_SESSION['information']['article_status']);
 
         </tbody>
     </table>
+
     <?php if ($totalpages > 1) { ?>
         <div class="pagination-center">
             <div class="pagination">

@@ -1,7 +1,6 @@
 <?php 
 
     $page = "Gestion du blog";
-    $pagearticles = 10;
 
     $totalarticles =  $DB->prepare('SELECT post_id FROM posts');
     $totalarticles->execute();

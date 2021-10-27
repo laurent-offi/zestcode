@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/css/blog.css">
     <link rel="stylesheet" href="/public/css/breakpoint.css">
+    <link rel="stylesheet" href="/public/css/pagination.css">
 
 </head>
 <body>
