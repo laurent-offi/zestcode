@@ -15,7 +15,6 @@
 
         <div class="form">
 
-
             <a class="back" href="/backend/blog"><i class="fas fa-arrow-circle-left"></i> Retour</a>
 
             <form method="post">

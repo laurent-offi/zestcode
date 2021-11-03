@@ -1,0 +1,49 @@
+:root {
+    --light-green: #8DEC8F;
+    --dark-green: #00805D;
+    --green: #4F825D;
+    --light-yellow: #FDF2B9;
+    --yellow: #FFDC23;
+    --light-grey: #e0e0e0;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%!important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    background: url("/public/images/background.svg") repeat center 100% fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: futura;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: futura;
+    src: url(/public/fonts/futura_medium_bt.ttf);
+
+}
+
+@font-face {
+    font-family: solway;    
+    src: url(/public/fonts/Solway-Regular.ttf);
+
+}
+
+.container {
+
+    --spacement: 8rem;
+
+    padding-left: var(--spacement);
+    padding-right: var(--spacement);
+    display: flex;
+    width: 100%;
+}

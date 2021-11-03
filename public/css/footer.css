@@ -1,0 +1,26 @@
+footer {
+    display: flex;
+    width: 100%;
+    background-color: var(--light-yellow);
+    height: 5rem;
+    flex-direction: column;
+}
+
+footer .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+
+footer .footer-container img {
+    cursor: pointer;
+}
+
+footer .copyright {
+    display: flex;
+    align-items: center;
+
+}

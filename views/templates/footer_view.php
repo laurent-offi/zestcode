@@ -1,6 +1,32 @@
 
+    <footer>
 
 
+
+<div class="footer-container">
+
+    <div class="copyright">copyright® zest code 2021 //</div>
+
+    <div class="socials-icons">
+
+        <img src="/public/images/facebook.png" alt="facebook">
+        <img src="/public/images/instagram.png" alt="instagram">
+        <img src="/public/images/twitter.png" alt="twitter">
+
+    </div>
+</div>
+
+
+
+</footer>
+
+</body>
+<script src="/public/js/counter.js"></script>
+<script src="/public/js/jquery.js"></script>
+<script src="/public/js/navbar.js"></script>
+<script src="/public/js/sidebar.js"></script>
+<script src="/public/js/slider.js"></script>
+</html>
 
 
 

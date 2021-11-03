@@ -1,0 +1,64 @@
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    align-items: center;
+}
+
+header.sticky {
+    top: 0;
+    position: fixed;
+    background-color: #f5f4f4;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+header.sticky .responsive-menu i {
+    color: white;
+}
+
+header .brand {
+    width: 20%;
+    display: flex;
+    align-items: center;
+
+}
+
+header .brand img {
+    width: 8rem;
+}
+
+header .mobile-menu {
+    display: none;
+    width: 100%;
+}
+
+header .navbar {
+    width: 80%;
+}
+
+header .navbar ul {
+    display: flex;
+    justify-content: end;
+    user-select: none;
+}
+
+header .navbar ul li {
+    list-style: none;
+    margin: 1rem;
+}
+
+header .navbar ul li a {
+    text-decoration: none;
+    color: var(--dark-green);
+    transition: all 0.5s ease;
+}
+
+
+header .navbar ul li a.active {
+        text-decoration: underline;
+}
+
+header .navbar ul li a:hover {
+    text-decoration: underline;
+}

@@ -1,5 +1,25 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
+
+    .container {
+
+        --spacement: 2rem;
     
+        padding-left: var(--spacement);
+        padding-right: var(--spacement);
+    }
+    
+    header .navbar {
+        display: none;
+    }
+    
+    header .mobile-menu {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        justify-content: end;
+    }
+
+
     .blog .blog-container {
         margin: unset;
         padding: unset;
@@ -23,6 +43,77 @@
 
     .blog .blog-container .post .post-container {
         width: unset;
+    }
+    
+    section .space {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    section .space .presentation {
+        margin: auto;
+        width: 80%;
+        text-align: center;
+    }
+    
+    section .space .illustation {
+        margin: auto;
+        margin-top: 1rem;
+    }
+
+    section .big img {
+        width: 15rem;
+    }
+
+    section .small img {
+        width: 12rem;
+    }
+
+    section .process {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    section .slideshow-container {
+        margin: 1rem;
+    }
+
+    section .process img.arrow {
+        display: none;
+    }
+
+    section .table-container {
+        flex-wrap: wrap;
+    }
+
+    section .table-container .pricing-table {
+        width: 100%;
+        margin: 1rem;
+    }
+
+    section .space .form-contact {
+        width: 95%;
+    }
+
+    section .space .informations iframe  {
+        width: 100%;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        height: unset!important;
+    }
+    footer .footer-container {
+        width: 95%;
+        flex-direction: column!important;
+        flex-wrap: wrap;   
     }
 
 }

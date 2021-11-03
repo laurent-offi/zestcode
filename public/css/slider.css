@@ -1,0 +1,39 @@
+.slideshow-container {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 0.2rem solid #00CC95;
+    margin: 4rem;
+    width: 100%;
+    height: 320px;
+    word-wrap: break-word;
+   
+  }
+
+  .slide {
+      display: none;
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    .directions {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    img.slider_arrow{
+        cursor: pointer;
+        width: 2rem;
+        height: 4rem;
+        width: auto;
+        color: #888;
+        font-weight: bold;
+        user-select: none;
+        align-items: center;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }

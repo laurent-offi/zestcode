@@ -21,7 +21,9 @@ if (isset($_GET["url"])) {
     $url = explode("/", $_GET["url"]);
 }
 
-require_once($patch_root . "views/templates/header_view.php");
+if (!isset($url[1]) && $url != "backend") {
+    require_once($patch_root . "views/templates/header_view.php");
+}
 // On défini la variable url qui sert à savoir quel lien va être traîté par le routeur.
 
 if ($url == "") {
@@ -53,4 +55,6 @@ if ($url == "") {
     }
 }
 
-require_once($patch_root . "views/templates/footer_view.php");
+if (!isset($url[1]) && $url != "backend") {
+    require_once($patch_root . "views/templates/footer_view.php");
+}

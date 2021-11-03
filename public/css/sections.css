@@ -1,0 +1,258 @@
+section {
+
+    --margin: 10rem;
+
+    display: flex;
+    width: 100%;
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+}
+
+section .presentation strong {
+    font-size: 8rem;
+    font-weight: bold;
+    color: var(--yellow);
+}
+
+section .presentation p {
+    font-size: 1rem;
+    color: var(--dark-green);
+}
+
+section .presentation p.green {
+    font-size: 1rem;
+    color: var(--dark-green);
+}
+
+section .presentation b {
+    font-size: 1.4rem;
+    color: var(--yellow);
+}
+
+section .presentation h1 {
+    font-size: 1.4rem;
+    color: var(--light-green);
+}
+
+section .presentation h2 {
+    font-size: 1.2rem;
+    color: var(--light-green);
+}
+
+section .presentation p {
+    color: var(--light-grey);
+}
+
+section .presentation span {
+    color: var(--yellow);
+}
+
+section .space {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+section .presentation {
+    width: 50%;
+}
+
+
+section .big img {
+    width: 25rem;
+}
+
+section .small img {
+    width: 15rem;
+}
+
+section .process {
+    display: flex;
+    align-items: center;
+    margin: auto;
+
+}
+section .process .circle {
+    display: flex;
+    font-size: 0.8rem;
+    margin: 1rem;
+    color: black;
+    font-weight: 100;
+    padding: 3rem;
+    border-radius: 100%;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--yellow);
+}
+
+section .process .circle p {
+    color: black;
+    align-items: center;
+    width: 10rem;
+}
+
+section .process img.arrow {
+    display: flex;
+    width: 5rem;
+    height: 3rem;
+}
+
+section .process .circle:nth-child(1) {
+    background-color: #A1C8AC;
+}
+
+section .process .circle:nth-last-child(1) {
+    background-color: #00CC95;
+}
+
+
+
+
+section .table-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+section .table-container .pricing-table  {
+    width: 25%;
+    background-color: #FBFAFA;
+    text-align: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 2rem;
+}
+
+section .table-container .pricing-table .pricing-title {
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 1rem;
+    color: #434343;
+}
+
+section .table-container .yellow {
+    background-color: #FFDC23;
+}
+
+section .table-container .light-green {
+    background-color: #A1C8AC;
+}
+
+section .table-container .green {
+    background-color: #00CC95;
+}
+
+section .table-container .pricing-table .pricing-title img {
+    width: 2rem;
+    margin: auto;
+}
+
+section .table-container .pricing-table .pricing-container {
+    padding: 1rem;
+    color: #747474;
+    text-align: left!important;
+}
+
+section .table-container .pricing-table .pricing-container li {
+    list-style: none;
+}
+
+section .table-container .pricing-table .pricing-container li:before {
+    color: #32a732;
+    font-family: "Font Awesome 5 Pro";
+    content: "\f00c";
+    margin-right: 0.5rem;
+}
+
+section .table-container .pricing-table .pricing-container .price {
+    text-align: center;
+    color: #F6C23C;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-top: 0.1rem solid #BEBEBE;
+    border-bottom: 0.1rem solid #BEBEBE;
+}
+
+section .table-container .pricing-table .pricing-container button {
+    margin: 1rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #CADFD0;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+section .table-container .pricing-table .pricing-container button:hover {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+section .table-container .pricing-table .pricing-container .price:after {
+    content: "€";
+    font-size: 1rem;
+}
+
+section .space .informations {
+    display: flex;
+    flex-direction: column;
+}
+
+section .space .informations .contact {
+    margin-bottom: 1rem
+}
+
+section .space .informations .contact p {
+    color: white;
+}
+
+
+section .space .informations iframe {
+    border-radius: 0.5rem;
+    width: 400px;
+}
+
+section .form-contact {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    box-sizing: border-box;
+}
+
+section .form-contact input {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    outline: none;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+section .form-contact textarea {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    outline: none;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    height: 10rem;
+    max-height: 20rem;
+    resize: vertical;
+}
+
+section .form-contact button {
+    display: flex;
+    margin-left: auto;
+    background-color: #CADFD0;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
